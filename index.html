@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="common.css" />
   </head>
   <body>
-    <h2>안녕하세요.</h2>
+    <h2 id="a">안녕하세요.</h2>
     <p>
       안녕하세요. 저의 이름은 이연승입니다. 저의 나이는 30살이며 결혼을 하여 배우자가 있는 사람입니다. 좋아하는것은
       게임이며 좋아하는 음식은 돈까스입니다.
     </p>
 
-    <script></script>
+    <script>
+      let b = document.getElementById('a');
+      b.addEventListener('click', clickEvent);
+      function clickEvent() {
+        b.style.backgroundColor = 'blue';
+      }
+    </script>
   </body>
 </html>
